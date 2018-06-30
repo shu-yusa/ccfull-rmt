@@ -1,0 +1,28 @@
+7.0d0, 4.00d0, 5.50d0     ! Delta, sigma, alpha2
+0, 10                   ! lambda_min, lambda_max
+200.0d0                 ! w_l
+
+7.0d0, 4.0d0, 5.0d0     ! Delta, sigma, alpha2
+2, 10                   ! lambda_min, lambda_max
+300.0d0                 ! w_l
+
+7.0d0, 5.7345d0, 5.3647d0     ! Delta, sigma, alpha2
+2, 10                   ! lambda_min, lambda_max
+466.2579d0                 ! w_l
+
+7.0d0, 11.7896d0, 4.5381d0     ! Delta, sigma, alpha2
+2, 10                   ! lambda_min, lambda_max
+1222.5706d0                 ! w_l
+
+ iteration : 4 times
+ kai square =    400.262161079740
+ 1 |  158.19011 |
+ 2 |   14.51520 |
+ 3 |    3.14169 |
+ 4 |    5.00393 |
+
+   Delta =   7.0000 MeV
+   sigma =  11.7896 fm
+   alpha =   4.5381 fm
+   w_l   =1222.5706 MeV
+
