@@ -46,6 +46,7 @@
     character(len=500) :: dir2='angular'
     character(len=500) :: dir3='angular_dist'
     character(len=500) :: dir4="Q_val_dist"
+    character(len=20) :: outdir = 'results'
     character(len=8) :: proc_name
     character(len=100), parameter :: INPF="input_scat_noncoll"
     character(len=100) :: noncoll_inp
@@ -69,14 +70,12 @@
 
     ios = getcwd(cwd)
     if (myrank == 0) then
-!     dir2 = trim(dir)//'/'//trim(dir2) 
-!     dir3 = trim(dir)//'/'//trim(dir3)
-!     dir4 = trim(dir)//'/'//trim(dir4)
-      call check_directory(trim(cwd)//'/'//dir)
-      call check_directory(trim(dir)//'/'//dir2)
-      call check_directory(trim(dir)//'/'//dir3)
-      call check_directory(trim(dir)//'/'//dir4)
-      call make_dirs_below(dir,ip%Ncomp)
+      call check_directory(trim(cwd)//'/'//trim(outdir))
+      call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//dir)
+      call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir2)
+      call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir3)
+      call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir4)
+      call make_dirs_below(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir), ip%Ncomp)
     end if
     call mpi_barrier(mpi_comm_world, ierr)
 
@@ -121,7 +120,7 @@
     b = cm%find_rmin(0)
     call vrel_pot%make_Vrel()
     if (myrank == 0) then
-      ios = chdir(trim(cwd)//'/'//trim(dir))
+        ios = chdir(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir))
       call prof%pot_prof()
       call prof%Reaction_prof("calc_info", trim(noncoll_inp))
       ios = chdir(trim(cwd))
@@ -176,7 +175,7 @@
 
         write(rand,'(i3)') nr
         wd = trim(dir)//'/rand_'//trim(adjustl(rand))
-        ios = chdir(trim(cwd)//'/'//wd)
+        ios = chdir(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir))
         call output()
         call qel_corrected_angle()
 
@@ -204,7 +203,7 @@
     call cm%destruct_coup_mat()
     if (myrank == 0) then
       write(output_unit,*) "calculation finished."
-      write(output_unit,*) 'directory : '//trim(dir)
+      write(output_unit,*) 'directory : '//trim(outdir)//'/'//trim(dir)
     end if
 
     deallocate(Ea,  Esig, angl)

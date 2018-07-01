@@ -25,7 +25,7 @@
 'noncoll_levels_92Zr.dat'        ! noncoll_inp
 75                               ! lines
 1                                ! Ncomp
-'output/noncoll_Vb53.3_w0_200'   ! output directory
+'noncoll_Vb53.3_w0_200'   ! output directory
 
 ----------------------------------
 Ap, Zp, At, Zt

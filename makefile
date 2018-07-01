@@ -1,10 +1,10 @@
 FC=`which mpif90`
-SUB_DIR=./utils
+SUBDIR=./utils
 OBJDIR=./obj
 MODDIR=./modules
 
-UTIL_LIB=${SUB_DIR}/lib/libmylib.a
-MYLIB=-I ${SUB_DIR}/modules -L${SUB_DIR}/lib -lmylib
+UTIL_LIB=${SUBDIR}/lib/libmylib.a
+MYLIB=-I ${SUBDIR}/modules -L${SUBDIR}/lib -lmylib
 FLAGS=-O2 -J $(MODDIR) ${MYLIB} # ${LAP}
 # setenv LAP "-I/opt/intel/composer_xe_2011_sp1.7.256/mkl/include/intel64/ilp64 -lmkl_lapack95_ilp64 -lmkl_blas95_ilp64 -lmkl_intel_ilp64 -lmkl_intel_thread -lmkl_core -liomp5"
 

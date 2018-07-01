@@ -116,7 +116,8 @@ module calc_profile
       write(output_unit,*) '*************************************************'
       write(output_unit,*) 'Directory '
       write(output_unit,*)
-      write(output_unit,*) trim(dir(len(trim(cwd))+2:))
+!     write(output_unit,*) trim(dir(len(trim(cwd))+2:))
+      write(output_unit,*) dir
       write(output_unit,*)
       write(output_unit,*) 'does not exist.'
       write(output_unit,*)
