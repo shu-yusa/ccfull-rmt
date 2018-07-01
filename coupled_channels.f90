@@ -126,7 +126,8 @@ module coupled_channels
   end subroutine
 !----------------------------------------------------------------------
   pure subroutine Numerov(this, J, E)
-    use mkl95_lapack
+!   use mkl95_lapack
+    use lin_coup
     implicit none
     class(cc_scat), intent(inout) :: this
     integer, intent(in) :: J
@@ -186,11 +187,13 @@ module coupled_channels
     call Anm(this%ip%rgrid+2, J, E, U)
     A1 = this%IE - w1 * U
     T = this%IE
-    call sysv(A1, T)         ! LAPACK
+!   call sysv(A1, T)  ! LAPACK
+    call lin_sy(A1, T)
     this%kai2 = matmul(T, this%kai2)
     A1 = this%IE - w1 * A0
     T = this%IE
-    call sysv(A1, T)         ! LAPACK
+!   call sysv(A1, T)  ! LAPACK
+    call lin_sy(A1, T)
     this%kai0 = matmul(T, this%kai0)
 
     deallocate(A0, A1, T, U, psi1)
@@ -215,8 +218,8 @@ module coupled_channels
     end subroutine
 !----------------------------------------------------------------------!
     pure subroutine stabilize(A1, u1, u2, S)
-      use mkl95_lapack
-!     use lapack95
+!     use mkl95_lapack
+      use lin_coup
       implicit none
       real(8) :: w
       complex(8), intent(in) :: A1(:,:)
@@ -230,11 +233,12 @@ module coupled_channels
 
       S = this%IE - w1 * A1
       T = this%IE
-!     call sysv(A1, T)
-      call gesv(S, T)          ! LAPACK
+!     call gesv(S, T)  ! LAPACK
+      call lin_ge(S, T)
       S = matmul(T, u1)
       Sinv = this%IE
-      call gesv(S, Sinv)       ! LAPACK
+!     call gesv(S, Sinv)  ! LAPACK
+      call lin_ge(S, Sinv)
       u1 = matmul(u1, Sinv)
       u2 = matmul(u2, Sinv)
 
@@ -286,7 +290,8 @@ module coupled_channels
 !----------------------------------------------------------------------!
   pure subroutine Penet(this, J, E, Rn, P)
     use global_constant, only : hbar
-    use mkl95_lapack
+!   use mkl95_lapack
+    use lin_coup
     implicit none
     integer :: n, i
     integer, intent(in) :: J
@@ -299,7 +304,8 @@ module coupled_channels
 
     allocate(Cinv(this%ip%Nch,this%ip%Nch))
     Cinv = this%IE
-    call gesv(this%Cnm, Cinv)    ! LAPACK
+!   call gesv(this%Cnm, Cinv)  ! LAPACK
+    call lin_ge(this%Cnm, Cinv)
     do n=1, this%ip%Nch
       ref_cof = sum(this%Dnm(n,:) * Cinv(:,1))
       this%Sl(n,J) = - (max(E - this%vcoup_mat%e_n(n),0.0d0) / E) ** 0.25d0 * ref_cof

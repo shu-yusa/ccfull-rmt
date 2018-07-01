@@ -2,4 +2,8 @@
 *.sw[po]
 .DS_Store
 *.mod
+*.o
 a.out
+output/*
+!output/.gitkeep
+utils/lib/*.a

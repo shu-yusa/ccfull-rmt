@@ -1,10 +1,6 @@
 !======================================================================!
       module diff
 !----------------------------------------------------------------------!
-!     Title  : derive_mod.f90                                          !
-!     Author : Yusa Shusaku                                            !
-!     Date   : 2009-4-12-Sun                                           !
-!                                                                      !
 !     This is a module subroutine which computes a derivative of a     !
 !     given function f. To do this, we compute a polynomial of order n !
 !     which coincides with f at n+1 points x1, x2, ..., x(n+1). The    !

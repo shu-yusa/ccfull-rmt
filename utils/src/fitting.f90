@@ -1,5 +1,5 @@
 !======================================================================!
-module fitting_mod
+module fitting
   private
   integer, parameter :: MaxIter = 5000
 

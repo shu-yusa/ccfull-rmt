@@ -1,11 +1,5 @@
 !======================================================================!
-!     Title    : scat_exact_noncoll_ver6.f90                           !
-!     Coded by : Shusaku Yusa                                          !
-!     Last modified : 2011.11.16(Wed)                                  ! 
-!                                                                      !
-!     Difference from scat_exact_ver21_oop.f90 is that the double-     !
-!     folding module is removed.                                       !
-!     Each file contains only one module.                              ! 
+!     Title    : scat_noncoll.f90                                !
 !                                                                      !
 !     *** Structure of This Program ***                                !
 !                                                                      !
@@ -53,7 +47,7 @@
     character(len=500) :: dir3='angular_dist'
     character(len=500) :: dir4="Q_val_dist"
     character(len=8) :: proc_name
-    character(len=100), parameter :: INPF="input_scat_exact_noncoll_ver5"
+    character(len=100), parameter :: INPF="input_scat_noncoll"
     character(len=100) :: noncoll_inp
     character(len=3) :: rand
     type(inp) :: ip
@@ -528,10 +522,11 @@
       integer :: i, n, m
       integer :: s, di_u, di_l
       integer :: t(ip%Nch)
+      integer, dimension(ip%Nch) :: k
+      integer, dimension(ip%nth,ip%Egrid+1) :: kcm2
       real(8), allocatable, dimension(:,:,:) :: dsig_qel_n_lab
       real(8), allocatable, dimension(:,:) :: dsig_R_lab
-      real(8), dimension(ip%Nch) :: Kcm, vcm, k, tcm, tlab
-      real(8), dimension(ip%nth,ip%Egrid+1) :: kcm2
+      real(8), dimension(ip%Nch) :: Kcm, vcm, tcm, tlab
       real(8) :: E, Dqel, Elab, V, E2
       character(len=50), parameter :: FM8='(1x,2f10.3,2es14.4)'
       character(len=50), parameter :: FM9='(1x,2f10.3,2es11.3)'

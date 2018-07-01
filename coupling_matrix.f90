@@ -47,7 +47,6 @@ module coupling_matrix
     integer :: Fnum = 7
     integer :: lambda(ip%Nch_t_noncoll)
     real(8), dimension(ip%Nch_t_noncoll) :: beta, eps_t
-    real(8) :: eps
     real(8) :: e, a, eta, Epair, w_l
     character(len=*), intent(in) :: Fname, Fname2
 
@@ -99,11 +98,11 @@ module coupling_matrix
       this%e_n = 0.0d0
     else if (this%ip%coup_t == - 1) then
       do i=1, this%ip%Nch
-        this%e_n(i) = eps(this,i)
+        this%e_n(i) = eps(this, i)
       end do
     else if (this%ip%coup_p == - 1) then
       do i=1, this%ip%Nch_t_coll
-        this%e_n(i) = eps(this,i)
+        this%e_n(i) = eps(this, i)
       end do
       this%e_n(this%ip%Nch_t_coll+1:) = eps_t
     else
@@ -168,7 +167,7 @@ module coupling_matrix
 
   end subroutine
 !----------------------------------------------------------------------
-  elemental subroutine set_rmt_params(this, w_l, Delta, sigma, alpha)
+  subroutine set_rmt_params(this, w_l, Delta, sigma, alpha)
     implicit none
     class(coup_mat), intent(out) :: this
     real(8), intent(in) :: Delta, sigma, alpha, w_l
@@ -186,7 +185,7 @@ module coupling_matrix
     if (allocated(this%Vcp_linear)) deallocate(this%Vcp_linear)
   end subroutine
 !----------------------------------------------------------------------
-  function getVcp(this, ir) result(V)
+  pure function getVcp(this, ir) result(V)
     implicit none
     class(coup_mat), intent(in) :: this
     integer, intent(in) :: ir
@@ -324,7 +323,8 @@ module coupling_matrix
   end subroutine
 !----------------------------------------------------------------------
   subroutine Vn_rot(this, r, Vpot)
-    use mkl95_lapack
+!   use mkl95_lapack
+    use eigen
     implicit none
     class(coup_mat), intent(in) :: this
     integer :: i, n, m, I1, I2
@@ -395,7 +395,8 @@ module coupling_matrix
           end do
         end do
       end if
-      call syev(O, Oa, 'V','L')
+!     call syev(O, Oa, 'V','L')  ! LAPACK
+      call houshld_ql(O, Oa, 'V')
     end if
 
 !   Vpot = 0.0d0
@@ -404,7 +405,6 @@ module coupling_matrix
 !   forall (n=1:this%ip%Nch)
 !     Vpot(n,n) = -this%ip%V0 / (1.0d0 + exp((r - this%ip%Rn)/this%ip%a))
 !   end forall
-
 
     Vn = - this%ip%V0 / (1.0d0 + exp((r - this%ip%Rn - Oa) / this%ip%a))
 
@@ -416,8 +416,6 @@ module coupling_matrix
         end do
       end do
     end do
-
-!   call print_mat(Vpot)
 
     return
   end subroutine
@@ -514,15 +512,15 @@ module coupling_matrix
     return
   end subroutine
 !----------------------------------------------------------------------
-  subroutine  Vn_vib(this, ir, r, Vpot)
-    use mkl95_lapack
+  subroutine Vn_vib(this, ir, r, Vpot)
+!   use mkl95_lapack
+    use eigen
     implicit none
     class(coup_mat), intent(in) :: this
     integer, intent(in) :: ir
     integer :: n, m, i, n2, idum
     real(8), intent(in) :: r
     real(8), intent(out) :: Vpot(:,:)
-!   real(8), intent(in) :: beta(this%ip%Nch_t_noncoll)
     real(8), allocatable, save :: O(:,:), Oa(:)
     real(8), allocatable, save :: O_sub(:,:), Oa_sub(:)
     real(8), dimension(this%ip%Nch) :: Vn
@@ -561,7 +559,8 @@ module coupling_matrix
           end do
         end do
 
-        call syev(O, Oa, 'V','L')
+!       call syev(O, Oa, 'V','L')  ! LAPACK
+        call houshld_ql(O, Oa, 'V')
       else if (this%ip%coup_t == 0) then
         allocate(O(this%ip%Nch_t_coll,this%ip%Nch_t_coll))
         allocate(Oa(this%ip%Nch_t_coll))
@@ -589,8 +588,8 @@ module coupling_matrix
           end do
         end do
 
-        call syev(O, Oa, 'V','L')
-
+!       call syev(O, Oa, 'V','L')  ! LAPACK
+        call houshld_ql(O, Oa, 'V')
       end if
 
     end if
@@ -788,7 +787,8 @@ module coupling_matrix
   end subroutine
 !----------------------------------------------------------------------
   subroutine Vn_pro_tar(this, ir, r, Vpot)
-    use mkl95_lapack
+!   use mkl95_lapack
+    use eigen
     use global_constant, only : PI
     implicit none
     class(coup_mat), intent(inout) :: this
@@ -864,7 +864,8 @@ module coupling_matrix
 ! projectile excitations
       call sub_Vn(Q, O)
 
-      call syev(O, Oa, 'V','L')
+!     call syev(O, Oa, 'V','L')  ! LAPACK
+      call houshld_ql(O, Oa, 'V')
     end if
 
     Vn = - this%ip%V0 / (1.0d0 + exp((r - this%ip%Rn - Oa) / this%ip%a))

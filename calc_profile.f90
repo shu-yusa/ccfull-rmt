@@ -64,7 +64,8 @@ module calc_profile
       write(output_unit,*) '*************************************************'
       write(output_unit,*) 'Directory '
       write(output_unit,*)
-      write(output_unit,*) trim(dir(len(trim(cwd))+2:))
+!     write(output_unit,*) trim(dir(len(trim(cwd))+2:))
+      write(output_unit,*) dir
       write(output_unit,*)
       write(output_unit,*) 'does not exist.'
       write(output_unit,*)
@@ -154,19 +155,19 @@ module calc_profile
         call system(command)
         ios = chdir('rand_'//trim(adjustl(num)))
 
-        ios = access('angular')
+        ios = access('angular', 'rw')
         if (ios /= 0) then
           command = 'mkdir angular'
           call system(command)
         end if
 
-        ios = access('angular_dist')
+        ios = access('angular_dist', 'rw')
         if (ios /= 0) then
           command = 'mkdir angular_dist'
           call system(command)
         end if
 
-        ios = access('Q_val_dist')
+        ios = access('Q_val_dist', 'rw')
         if (ios /= 0) then
           command = 'mkdir Q_val_dist'
           call system(command)

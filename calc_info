@@ -1,0 +1,490 @@
+ ------------------------------------------------
+  Target     nucleus :  92 Zr
+  Projectile nucleus :  20 Ne
+
+  Phonon excitation in the target :
+   r0      = 1.2000 fm
+   Rt      = 5.4172 fm
+   betaL   = 0.1440
+   betaC   = 0.1030
+   omega   = 0.9300 MeV
+   Lambda  = 2
+   Nphonon = 2
+
+  Phonon excitation in the target :
+   betaL   = 0.1700
+   betaC   = 0.1700
+   omega   = 2.3400 MeV
+   Lambda  = 3
+   Nphonon = 2
+
+  Rotational excitation in the projectile :
+   r0      = 1.2000 fm
+   Rp      = 3.2573 fm
+   beta2   = 0.4600
+   beta4   = 0.2700
+   E2      = 1.6337 MeV
+   Nrot    = 3
+
+  Phonon excitation in the projectile :
+   betaL   = 0.3900
+   betaC   = 0.3900
+   omega   = 5.6214 MeV
+   Lambda  = 3
+   Nphonon = 1
+
+
+  The number of channels =   400
+ ----------------------------------------------
+  ** Potential Profile (Woods-Saxon) **
+   V0 =  62.3000 MeV
+   r0 =   1.1500 fm
+   Rn =   8.3131 fm
+   a  =   0.6500 fm
+  ** Coulomb radius **
+   r0c=   1.1000 fm
+   Rc =   7.9517 fm
+
+   W0 =  30.0000 MeV
+   r0w=   0.9000 fm
+   Rw =   6.5059 fm
+   aw =   0.3000 fm
+
+  Minimum of the Coulomb pocket
+   r    =   7.1195 fm
+   V(r) =  25.9074 MeV
+
+  Maximum of the Coulomb barrier
+   r    =  10.0638 fm
+   V(r) =  53.3015 MeV
+ ------------------------------------------------
+  ** Parameters in Random Matrix Theory **
+   Delta =   7.0000 MeV
+   sigma =   4.0000 fm
+   alpha =   5.5000 fm
+   Lambda_min =  0
+   Lambda_max = 10
+   w_l   =   200.0000 MeV
+
+  ** The numer of stabilization points **
+     5 points
+
+  ** Noncoll input file **
+   noncoll_levels_92Zr.dat
+  ** Number of trials **
+  Ncomp =  1
+ ------------------------------------------------
+  ** other information **                      
+  rmin =   0.0000 fm
+  rmax = 100.0000 fm
+  dr   =   0.0400 fm
+  rcut =  25.0000 fm
+
+  Emin =  60.0000 MeV
+  Emax =  60.0000 MeV
+  dE   =   0.0000 MeV
+
+
+  Jmax =  100
+ ----------------------------------------------
+  Channels :
+   1 ch: nt =  0, np =  0, E* =  0.000 MeV
+   2 ch: nt =  1, np =  0, E* =  0.930 MeV
+   3 ch: nt =  2, np =  0, E* =  1.860 MeV
+   4 ch: nt =  3, np =  0, E* =  2.340 MeV
+   5 ch: nt =  4, np =  0, E* =  4.680 MeV
+   6 ch: nt =  5, np =  0, E* =  1.383 MeV
+   7 ch: nt =  6, np =  0, E* =  1.495 MeV
+   8 ch: nt =  7, np =  0, E* =  1.847 MeV
+   9 ch: nt =  8, np =  0, E* =  2.067 MeV
+  10 ch: nt =  9, np =  0, E* =  2.182 MeV
+  11 ch: nt = 10, np =  0, E* =  2.398 MeV
+  12 ch: nt = 11, np =  0, E* =  2.486 MeV
+  13 ch: nt = 12, np =  0, E* =  2.752 MeV
+  14 ch: nt = 13, np =  0, E* =  2.820 MeV
+  15 ch: nt = 14, np =  0, E* =  2.863 MeV
+  16 ch: nt = 15, np =  0, E* =  2.904 MeV
+  17 ch: nt = 16, np =  0, E* =  2.909 MeV
+  18 ch: nt = 17, np =  0, E* =  2.958 MeV
+  19 ch: nt = 18, np =  0, E* =  3.040 MeV
+  20 ch: nt = 19, np =  0, E* =  3.058 MeV
+  21 ch: nt = 20, np =  0, E* =  3.178 MeV
+  22 ch: nt = 21, np =  0, E* =  3.237 MeV
+  23 ch: nt = 22, np =  0, E* =  3.263 MeV
+  24 ch: nt = 23, np =  0, E* =  3.276 MeV
+  25 ch: nt = 24, np =  0, E* =  3.289 MeV
+  26 ch: nt = 25, np =  0, E* =  3.304 MeV
+  27 ch: nt = 26, np =  0, E* =  3.309 MeV
+  28 ch: nt = 27, np =  0, E* =  3.345 MeV
+  29 ch: nt = 28, np =  0, E* =  3.372 MeV
+  30 ch: nt = 29, np =  0, E* =  3.380 MeV
+  31 ch: nt = 30, np =  0, E* =  3.382 MeV
+  32 ch: nt = 31, np =  0, E* =  3.408 MeV
+  33 ch: nt = 32, np =  0, E* =  3.446 MeV
+  34 ch: nt = 33, np =  0, E* =  3.452 MeV
+  35 ch: nt = 34, np =  0, E* =  3.460 MeV
+  36 ch: nt = 35, np =  0, E* =  3.491 MeV
+  37 ch: nt = 36, np =  0, E* =  3.500 MeV
+  38 ch: nt = 37, np =  0, E* =  3.589 MeV
+  39 ch: nt = 38, np =  0, E* =  3.602 MeV
+  40 ch: nt = 39, np =  0, E* =  3.628 MeV
+  41 ch: nt = 40, np =  0, E* =  3.640 MeV
+  42 ch: nt = 41, np =  0, E* =  3.704 MeV
+  43 ch: nt = 42, np =  0, E* =  3.760 MeV
+  44 ch: nt = 43, np =  0, E* =  3.767 MeV
+  45 ch: nt = 44, np =  0, E* =  3.783 MeV
+  46 ch: nt = 45, np =  0, E* =  3.814 MeV
+  47 ch: nt = 46, np =  0, E* =  3.830 MeV
+  48 ch: nt = 47, np =  0, E* =  3.944 MeV
+  49 ch: nt = 48, np =  0, E* =  3.992 MeV
+  50 ch: nt = 49, np =  0, E* =  3.999 MeV
+  51 ch: nt = 50, np =  0, E* =  4.040 MeV
+  52 ch: nt = 51, np =  0, E* =  4.082 MeV
+  53 ch: nt = 52, np =  0, E* =  4.142 MeV
+  54 ch: nt = 53, np =  0, E* =  4.161 MeV
+  55 ch: nt = 54, np =  0, E* =  4.181 MeV
+  56 ch: nt = 55, np =  0, E* =  4.213 MeV
+  57 ch: nt = 56, np =  0, E* =  4.256 MeV
+  58 ch: nt = 57, np =  0, E* =  4.270 MeV
+  59 ch: nt = 58, np =  0, E* =  4.283 MeV
+  60 ch: nt = 59, np =  0, E* =  4.297 MeV
+  61 ch: nt = 60, np =  0, E* =  4.332 MeV
+  62 ch: nt = 61, np =  0, E* =  4.380 MeV
+  63 ch: nt = 62, np =  0, E* =  4.397 MeV
+  64 ch: nt = 63, np =  0, E* =  4.453 MeV
+  65 ch: nt = 64, np =  0, E* =  4.465 MeV
+  66 ch: nt = 65, np =  0, E* =  4.539 MeV
+  67 ch: nt = 66, np =  0, E* =  4.606 MeV
+  68 ch: nt = 67, np =  0, E* =  4.720 MeV
+  69 ch: nt = 68, np =  0, E* =  4.785 MeV
+  70 ch: nt = 69, np =  0, E* =  4.807 MeV
+  71 ch: nt = 70, np =  0, E* =  4.928 MeV
+  72 ch: nt = 71, np =  0, E* =  4.947 MeV
+  73 ch: nt = 72, np =  0, E* =  5.056 MeV
+  74 ch: nt = 73, np =  0, E* =  5.067 MeV
+  75 ch: nt = 74, np =  0, E* =  5.115 MeV
+  76 ch: nt = 75, np =  0, E* =  5.310 MeV
+  77 ch: nt = 76, np =  0, E* =  5.490 MeV
+  78 ch: nt = 77, np =  0, E* =  5.581 MeV
+  79 ch: nt = 78, np =  0, E* =  5.680 MeV
+  80 ch: nt = 79, np =  0, E* =  5.685 MeV
+  81 ch: nt =  0, np =  1, E* =  1.634 MeV
+  82 ch: nt =  1, np =  1, E* =  2.564 MeV
+  83 ch: nt =  2, np =  1, E* =  3.494 MeV
+  84 ch: nt =  3, np =  1, E* =  3.974 MeV
+  85 ch: nt =  4, np =  1, E* =  6.314 MeV
+  86 ch: nt =  5, np =  1, E* =  3.017 MeV
+  87 ch: nt =  6, np =  1, E* =  3.129 MeV
+  88 ch: nt =  7, np =  1, E* =  3.481 MeV
+  89 ch: nt =  8, np =  1, E* =  3.700 MeV
+  90 ch: nt =  9, np =  1, E* =  3.816 MeV
+  91 ch: nt = 10, np =  1, E* =  4.032 MeV
+  92 ch: nt = 11, np =  1, E* =  4.120 MeV
+  93 ch: nt = 12, np =  1, E* =  4.386 MeV
+  94 ch: nt = 13, np =  1, E* =  4.453 MeV
+  95 ch: nt = 14, np =  1, E* =  4.497 MeV
+  96 ch: nt = 15, np =  1, E* =  4.537 MeV
+  97 ch: nt = 16, np =  1, E* =  4.543 MeV
+  98 ch: nt = 17, np =  1, E* =  4.591 MeV
+  99 ch: nt = 18, np =  1, E* =  4.673 MeV
+ 100 ch: nt = 19, np =  1, E* =  4.692 MeV
+ 101 ch: nt = 20, np =  1, E* =  4.812 MeV
+ 102 ch: nt = 21, np =  1, E* =  4.871 MeV
+ 103 ch: nt = 22, np =  1, E* =  4.896 MeV
+ 104 ch: nt = 23, np =  1, E* =  4.910 MeV
+ 105 ch: nt = 24, np =  1, E* =  4.923 MeV
+ 106 ch: nt = 25, np =  1, E* =  4.938 MeV
+ 107 ch: nt = 26, np =  1, E* =  4.943 MeV
+ 108 ch: nt = 27, np =  1, E* =  4.979 MeV
+ 109 ch: nt = 28, np =  1, E* =  5.005 MeV
+ 110 ch: nt = 29, np =  1, E* =  5.014 MeV
+ 111 ch: nt = 30, np =  1, E* =  5.016 MeV
+ 112 ch: nt = 31, np =  1, E* =  5.042 MeV
+ 113 ch: nt = 32, np =  1, E* =  5.080 MeV
+ 114 ch: nt = 33, np =  1, E* =  5.086 MeV
+ 115 ch: nt = 34, np =  1, E* =  5.094 MeV
+ 116 ch: nt = 35, np =  1, E* =  5.125 MeV
+ 117 ch: nt = 36, np =  1, E* =  5.134 MeV
+ 118 ch: nt = 37, np =  1, E* =  5.223 MeV
+ 119 ch: nt = 38, np =  1, E* =  5.236 MeV
+ 120 ch: nt = 39, np =  1, E* =  5.262 MeV
+ 121 ch: nt = 40, np =  1, E* =  5.274 MeV
+ 122 ch: nt = 41, np =  1, E* =  5.338 MeV
+ 123 ch: nt = 42, np =  1, E* =  5.394 MeV
+ 124 ch: nt = 43, np =  1, E* =  5.401 MeV
+ 125 ch: nt = 44, np =  1, E* =  5.417 MeV
+ 126 ch: nt = 45, np =  1, E* =  5.448 MeV
+ 127 ch: nt = 46, np =  1, E* =  5.464 MeV
+ 128 ch: nt = 47, np =  1, E* =  5.578 MeV
+ 129 ch: nt = 48, np =  1, E* =  5.626 MeV
+ 130 ch: nt = 49, np =  1, E* =  5.633 MeV
+ 131 ch: nt = 50, np =  1, E* =  5.674 MeV
+ 132 ch: nt = 51, np =  1, E* =  5.716 MeV
+ 133 ch: nt = 52, np =  1, E* =  5.776 MeV
+ 134 ch: nt = 53, np =  1, E* =  5.795 MeV
+ 135 ch: nt = 54, np =  1, E* =  5.815 MeV
+ 136 ch: nt = 55, np =  1, E* =  5.847 MeV
+ 137 ch: nt = 56, np =  1, E* =  5.890 MeV
+ 138 ch: nt = 57, np =  1, E* =  5.904 MeV
+ 139 ch: nt = 58, np =  1, E* =  5.917 MeV
+ 140 ch: nt = 59, np =  1, E* =  5.931 MeV
+ 141 ch: nt = 60, np =  1, E* =  5.966 MeV
+ 142 ch: nt = 61, np =  1, E* =  6.014 MeV
+ 143 ch: nt = 62, np =  1, E* =  6.031 MeV
+ 144 ch: nt = 63, np =  1, E* =  6.087 MeV
+ 145 ch: nt = 64, np =  1, E* =  6.099 MeV
+ 146 ch: nt = 65, np =  1, E* =  6.173 MeV
+ 147 ch: nt = 66, np =  1, E* =  6.240 MeV
+ 148 ch: nt = 67, np =  1, E* =  6.354 MeV
+ 149 ch: nt = 68, np =  1, E* =  6.419 MeV
+ 150 ch: nt = 69, np =  1, E* =  6.441 MeV
+ 151 ch: nt = 70, np =  1, E* =  6.562 MeV
+ 152 ch: nt = 71, np =  1, E* =  6.581 MeV
+ 153 ch: nt = 72, np =  1, E* =  6.690 MeV
+ 154 ch: nt = 73, np =  1, E* =  6.701 MeV
+ 155 ch: nt = 74, np =  1, E* =  6.749 MeV
+ 156 ch: nt = 75, np =  1, E* =  6.944 MeV
+ 157 ch: nt = 76, np =  1, E* =  7.124 MeV
+ 158 ch: nt = 77, np =  1, E* =  7.215 MeV
+ 159 ch: nt = 78, np =  1, E* =  7.314 MeV
+ 160 ch: nt = 79, np =  1, E* =  7.319 MeV
+ 161 ch: nt =  0, np =  2, E* =  5.446 MeV
+ 162 ch: nt =  1, np =  2, E* =  6.376 MeV
+ 163 ch: nt =  2, np =  2, E* =  7.306 MeV
+ 164 ch: nt =  3, np =  2, E* =  7.786 MeV
+ 165 ch: nt =  4, np =  2, E* = 10.126 MeV
+ 166 ch: nt =  5, np =  2, E* =  6.828 MeV
+ 167 ch: nt =  6, np =  2, E* =  6.941 MeV
+ 168 ch: nt =  7, np =  2, E* =  7.293 MeV
+ 169 ch: nt =  8, np =  2, E* =  7.512 MeV
+ 170 ch: nt =  9, np =  2, E* =  7.628 MeV
+ 171 ch: nt = 10, np =  2, E* =  7.844 MeV
+ 172 ch: nt = 11, np =  2, E* =  7.932 MeV
+ 173 ch: nt = 12, np =  2, E* =  8.198 MeV
+ 174 ch: nt = 13, np =  2, E* =  8.265 MeV
+ 175 ch: nt = 14, np =  2, E* =  8.309 MeV
+ 176 ch: nt = 15, np =  2, E* =  8.349 MeV
+ 177 ch: nt = 16, np =  2, E* =  8.355 MeV
+ 178 ch: nt = 17, np =  2, E* =  8.403 MeV
+ 179 ch: nt = 18, np =  2, E* =  8.485 MeV
+ 180 ch: nt = 19, np =  2, E* =  8.503 MeV
+ 181 ch: nt = 20, np =  2, E* =  8.624 MeV
+ 182 ch: nt = 21, np =  2, E* =  8.683 MeV
+ 183 ch: nt = 22, np =  2, E* =  8.708 MeV
+ 184 ch: nt = 23, np =  2, E* =  8.722 MeV
+ 185 ch: nt = 24, np =  2, E* =  8.735 MeV
+ 186 ch: nt = 25, np =  2, E* =  8.750 MeV
+ 187 ch: nt = 26, np =  2, E* =  8.755 MeV
+ 188 ch: nt = 27, np =  2, E* =  8.791 MeV
+ 189 ch: nt = 28, np =  2, E* =  8.817 MeV
+ 190 ch: nt = 29, np =  2, E* =  8.825 MeV
+ 191 ch: nt = 30, np =  2, E* =  8.828 MeV
+ 192 ch: nt = 31, np =  2, E* =  8.854 MeV
+ 193 ch: nt = 32, np =  2, E* =  8.892 MeV
+ 194 ch: nt = 33, np =  2, E* =  8.898 MeV
+ 195 ch: nt = 34, np =  2, E* =  8.906 MeV
+ 196 ch: nt = 35, np =  2, E* =  8.937 MeV
+ 197 ch: nt = 36, np =  2, E* =  8.946 MeV
+ 198 ch: nt = 37, np =  2, E* =  9.035 MeV
+ 199 ch: nt = 38, np =  2, E* =  9.048 MeV
+ 200 ch: nt = 39, np =  2, E* =  9.074 MeV
+ 201 ch: nt = 40, np =  2, E* =  9.086 MeV
+ 202 ch: nt = 41, np =  2, E* =  9.150 MeV
+ 203 ch: nt = 42, np =  2, E* =  9.206 MeV
+ 204 ch: nt = 43, np =  2, E* =  9.213 MeV
+ 205 ch: nt = 44, np =  2, E* =  9.229 MeV
+ 206 ch: nt = 45, np =  2, E* =  9.260 MeV
+ 207 ch: nt = 46, np =  2, E* =  9.276 MeV
+ 208 ch: nt = 47, np =  2, E* =  9.390 MeV
+ 209 ch: nt = 48, np =  2, E* =  9.438 MeV
+ 210 ch: nt = 49, np =  2, E* =  9.444 MeV
+ 211 ch: nt = 50, np =  2, E* =  9.486 MeV
+ 212 ch: nt = 51, np =  2, E* =  9.528 MeV
+ 213 ch: nt = 52, np =  2, E* =  9.588 MeV
+ 214 ch: nt = 53, np =  2, E* =  9.607 MeV
+ 215 ch: nt = 54, np =  2, E* =  9.627 MeV
+ 216 ch: nt = 55, np =  2, E* =  9.659 MeV
+ 217 ch: nt = 56, np =  2, E* =  9.702 MeV
+ 218 ch: nt = 57, np =  2, E* =  9.716 MeV
+ 219 ch: nt = 58, np =  2, E* =  9.729 MeV
+ 220 ch: nt = 59, np =  2, E* =  9.743 MeV
+ 221 ch: nt = 60, np =  2, E* =  9.778 MeV
+ 222 ch: nt = 61, np =  2, E* =  9.826 MeV
+ 223 ch: nt = 62, np =  2, E* =  9.843 MeV
+ 224 ch: nt = 63, np =  2, E* =  9.899 MeV
+ 225 ch: nt = 64, np =  2, E* =  9.911 MeV
+ 226 ch: nt = 65, np =  2, E* =  9.985 MeV
+ 227 ch: nt = 66, np =  2, E* = 10.052 MeV
+ 228 ch: nt = 67, np =  2, E* = 10.166 MeV
+ 229 ch: nt = 68, np =  2, E* = 10.231 MeV
+ 230 ch: nt = 69, np =  2, E* = 10.253 MeV
+ 231 ch: nt = 70, np =  2, E* = 10.374 MeV
+ 232 ch: nt = 71, np =  2, E* = 10.393 MeV
+ 233 ch: nt = 72, np =  2, E* = 10.502 MeV
+ 234 ch: nt = 73, np =  2, E* = 10.513 MeV
+ 235 ch: nt = 74, np =  2, E* = 10.561 MeV
+ 236 ch: nt = 75, np =  2, E* = 10.756 MeV
+ 237 ch: nt = 76, np =  2, E* = 10.936 MeV
+ 238 ch: nt = 77, np =  2, E* = 11.027 MeV
+ 239 ch: nt = 78, np =  2, E* = 11.126 MeV
+ 240 ch: nt = 79, np =  2, E* = 11.131 MeV
+ 241 ch: nt =  0, np =  3, E* = 11.436 MeV
+ 242 ch: nt =  1, np =  3, E* = 12.366 MeV
+ 243 ch: nt =  2, np =  3, E* = 13.296 MeV
+ 244 ch: nt =  3, np =  3, E* = 13.776 MeV
+ 245 ch: nt =  4, np =  3, E* = 16.116 MeV
+ 246 ch: nt =  5, np =  3, E* = 12.819 MeV
+ 247 ch: nt =  6, np =  3, E* = 12.931 MeV
+ 248 ch: nt =  7, np =  3, E* = 13.283 MeV
+ 249 ch: nt =  8, np =  3, E* = 13.503 MeV
+ 250 ch: nt =  9, np =  3, E* = 13.618 MeV
+ 251 ch: nt = 10, np =  3, E* = 13.834 MeV
+ 252 ch: nt = 11, np =  3, E* = 13.922 MeV
+ 253 ch: nt = 12, np =  3, E* = 14.188 MeV
+ 254 ch: nt = 13, np =  3, E* = 14.256 MeV
+ 255 ch: nt = 14, np =  3, E* = 14.299 MeV
+ 256 ch: nt = 15, np =  3, E* = 14.339 MeV
+ 257 ch: nt = 16, np =  3, E* = 14.345 MeV
+ 258 ch: nt = 17, np =  3, E* = 14.394 MeV
+ 259 ch: nt = 18, np =  3, E* = 14.476 MeV
+ 260 ch: nt = 19, np =  3, E* = 14.494 MeV
+ 261 ch: nt = 20, np =  3, E* = 14.614 MeV
+ 262 ch: nt = 21, np =  3, E* = 14.673 MeV
+ 263 ch: nt = 22, np =  3, E* = 14.699 MeV
+ 264 ch: nt = 23, np =  3, E* = 14.712 MeV
+ 265 ch: nt = 24, np =  3, E* = 14.725 MeV
+ 266 ch: nt = 25, np =  3, E* = 14.740 MeV
+ 267 ch: nt = 26, np =  3, E* = 14.745 MeV
+ 268 ch: nt = 27, np =  3, E* = 14.781 MeV
+ 269 ch: nt = 28, np =  3, E* = 14.807 MeV
+ 270 ch: nt = 29, np =  3, E* = 14.816 MeV
+ 271 ch: nt = 30, np =  3, E* = 14.818 MeV
+ 272 ch: nt = 31, np =  3, E* = 14.844 MeV
+ 273 ch: nt = 32, np =  3, E* = 14.882 MeV
+ 274 ch: nt = 33, np =  3, E* = 14.888 MeV
+ 275 ch: nt = 34, np =  3, E* = 14.896 MeV
+ 276 ch: nt = 35, np =  3, E* = 14.927 MeV
+ 277 ch: nt = 36, np =  3, E* = 14.936 MeV
+ 278 ch: nt = 37, np =  3, E* = 15.025 MeV
+ 279 ch: nt = 38, np =  3, E* = 15.038 MeV
+ 280 ch: nt = 39, np =  3, E* = 15.064 MeV
+ 281 ch: nt = 40, np =  3, E* = 15.076 MeV
+ 282 ch: nt = 41, np =  3, E* = 15.140 MeV
+ 283 ch: nt = 42, np =  3, E* = 15.196 MeV
+ 284 ch: nt = 43, np =  3, E* = 15.203 MeV
+ 285 ch: nt = 44, np =  3, E* = 15.219 MeV
+ 286 ch: nt = 45, np =  3, E* = 15.250 MeV
+ 287 ch: nt = 46, np =  3, E* = 15.266 MeV
+ 288 ch: nt = 47, np =  3, E* = 15.380 MeV
+ 289 ch: nt = 48, np =  3, E* = 15.428 MeV
+ 290 ch: nt = 49, np =  3, E* = 15.435 MeV
+ 291 ch: nt = 50, np =  3, E* = 15.476 MeV
+ 292 ch: nt = 51, np =  3, E* = 15.518 MeV
+ 293 ch: nt = 52, np =  3, E* = 15.578 MeV
+ 294 ch: nt = 53, np =  3, E* = 15.597 MeV
+ 295 ch: nt = 54, np =  3, E* = 15.617 MeV
+ 296 ch: nt = 55, np =  3, E* = 15.649 MeV
+ 297 ch: nt = 56, np =  3, E* = 15.692 MeV
+ 298 ch: nt = 57, np =  3, E* = 15.706 MeV
+ 299 ch: nt = 58, np =  3, E* = 15.719 MeV
+ 300 ch: nt = 59, np =  3, E* = 15.733 MeV
+ 301 ch: nt = 60, np =  3, E* = 15.768 MeV
+ 302 ch: nt = 61, np =  3, E* = 15.816 MeV
+ 303 ch: nt = 62, np =  3, E* = 15.833 MeV
+ 304 ch: nt = 63, np =  3, E* = 15.889 MeV
+ 305 ch: nt = 64, np =  3, E* = 15.901 MeV
+ 306 ch: nt = 65, np =  3, E* = 15.975 MeV
+ 307 ch: nt = 66, np =  3, E* = 16.042 MeV
+ 308 ch: nt = 67, np =  3, E* = 16.156 MeV
+ 309 ch: nt = 68, np =  3, E* = 16.221 MeV
+ 310 ch: nt = 69, np =  3, E* = 16.243 MeV
+ 311 ch: nt = 70, np =  3, E* = 16.364 MeV
+ 312 ch: nt = 71, np =  3, E* = 16.383 MeV
+ 313 ch: nt = 72, np =  3, E* = 16.492 MeV
+ 314 ch: nt = 73, np =  3, E* = 16.503 MeV
+ 315 ch: nt = 74, np =  3, E* = 16.551 MeV
+ 316 ch: nt = 75, np =  3, E* = 16.746 MeV
+ 317 ch: nt = 76, np =  3, E* = 16.926 MeV
+ 318 ch: nt = 77, np =  3, E* = 17.017 MeV
+ 319 ch: nt = 78, np =  3, E* = 17.116 MeV
+ 320 ch: nt = 79, np =  3, E* = 17.121 MeV
+ 321 ch: nt =  0, np =  4, E* =  5.621 MeV
+ 322 ch: nt =  1, np =  4, E* =  6.551 MeV
+ 323 ch: nt =  2, np =  4, E* =  7.481 MeV
+ 324 ch: nt =  3, np =  4, E* =  7.961 MeV
+ 325 ch: nt =  4, np =  4, E* = 10.301 MeV
+ 326 ch: nt =  5, np =  4, E* =  7.004 MeV
+ 327 ch: nt =  6, np =  4, E* =  7.117 MeV
+ 328 ch: nt =  7, np =  4, E* =  7.469 MeV
+ 329 ch: nt =  8, np =  4, E* =  7.688 MeV
+ 330 ch: nt =  9, np =  4, E* =  7.803 MeV
+ 331 ch: nt = 10, np =  4, E* =  8.020 MeV
+ 332 ch: nt = 11, np =  4, E* =  8.107 MeV
+ 333 ch: nt = 12, np =  4, E* =  8.373 MeV
+ 334 ch: nt = 13, np =  4, E* =  8.441 MeV
+ 335 ch: nt = 14, np =  4, E* =  8.485 MeV
+ 336 ch: nt = 15, np =  4, E* =  8.525 MeV
+ 337 ch: nt = 16, np =  4, E* =  8.531 MeV
+ 338 ch: nt = 17, np =  4, E* =  8.579 MeV
+ 339 ch: nt = 18, np =  4, E* =  8.661 MeV
+ 340 ch: nt = 19, np =  4, E* =  8.679 MeV
+ 341 ch: nt = 20, np =  4, E* =  8.800 MeV
+ 342 ch: nt = 21, np =  4, E* =  8.858 MeV
+ 343 ch: nt = 22, np =  4, E* =  8.884 MeV
+ 344 ch: nt = 23, np =  4, E* =  8.897 MeV
+ 345 ch: nt = 24, np =  4, E* =  8.911 MeV
+ 346 ch: nt = 25, np =  4, E* =  8.925 MeV
+ 347 ch: nt = 26, np =  4, E* =  8.930 MeV
+ 348 ch: nt = 27, np =  4, E* =  8.966 MeV
+ 349 ch: nt = 28, np =  4, E* =  8.993 MeV
+ 350 ch: nt = 29, np =  4, E* =  9.001 MeV
+ 351 ch: nt = 30, np =  4, E* =  9.003 MeV
+ 352 ch: nt = 31, np =  4, E* =  9.030 MeV
+ 353 ch: nt = 32, np =  4, E* =  9.067 MeV
+ 354 ch: nt = 33, np =  4, E* =  9.074 MeV
+ 355 ch: nt = 34, np =  4, E* =  9.081 MeV
+ 356 ch: nt = 35, np =  4, E* =  9.112 MeV
+ 357 ch: nt = 36, np =  4, E* =  9.122 MeV
+ 358 ch: nt = 37, np =  4, E* =  9.210 MeV
+ 359 ch: nt = 38, np =  4, E* =  9.223 MeV
+ 360 ch: nt = 39, np =  4, E* =  9.250 MeV
+ 361 ch: nt = 40, np =  4, E* =  9.262 MeV
+ 362 ch: nt = 41, np =  4, E* =  9.325 MeV
+ 363 ch: nt = 42, np =  4, E* =  9.381 MeV
+ 364 ch: nt = 43, np =  4, E* =  9.388 MeV
+ 365 ch: nt = 44, np =  4, E* =  9.404 MeV
+ 366 ch: nt = 45, np =  4, E* =  9.435 MeV
+ 367 ch: nt = 46, np =  4, E* =  9.452 MeV
+ 368 ch: nt = 47, np =  4, E* =  9.565 MeV
+ 369 ch: nt = 48, np =  4, E* =  9.613 MeV
+ 370 ch: nt = 49, np =  4, E* =  9.620 MeV
+ 371 ch: nt = 50, np =  4, E* =  9.661 MeV
+ 372 ch: nt = 51, np =  4, E* =  9.703 MeV
+ 373 ch: nt = 52, np =  4, E* =  9.763 MeV
+ 374 ch: nt = 53, np =  4, E* =  9.782 MeV
+ 375 ch: nt = 54, np =  4, E* =  9.802 MeV
+ 376 ch: nt = 55, np =  4, E* =  9.834 MeV
+ 377 ch: nt = 56, np =  4, E* =  9.877 MeV
+ 378 ch: nt = 57, np =  4, E* =  9.891 MeV
+ 379 ch: nt = 58, np =  4, E* =  9.904 MeV
+ 380 ch: nt = 59, np =  4, E* =  9.918 MeV
+ 381 ch: nt = 60, np =  4, E* =  9.953 MeV
+ 382 ch: nt = 61, np =  4, E* = 10.001 MeV
+ 383 ch: nt = 62, np =  4, E* = 10.018 MeV
+ 384 ch: nt = 63, np =  4, E* = 10.074 MeV
+ 385 ch: nt = 64, np =  4, E* = 10.086 MeV
+ 386 ch: nt = 65, np =  4, E* = 10.160 MeV
+ 387 ch: nt = 66, np =  4, E* = 10.227 MeV
+ 388 ch: nt = 67, np =  4, E* = 10.341 MeV
+ 389 ch: nt = 68, np =  4, E* = 10.406 MeV
+ 390 ch: nt = 69, np =  4, E* = 10.428 MeV
+ 391 ch: nt = 70, np =  4, E* = 10.549 MeV
+ 392 ch: nt = 71, np =  4, E* = 10.569 MeV
+ 393 ch: nt = 72, np =  4, E* = 10.677 MeV
+ 394 ch: nt = 73, np =  4, E* = 10.688 MeV
+ 395 ch: nt = 74, np =  4, E* = 10.736 MeV
+ 396 ch: nt = 75, np =  4, E* = 10.931 MeV
+ 397 ch: nt = 76, np =  4, E* = 11.111 MeV
+ 398 ch: nt = 77, np =  4, E* = 11.202 MeV
+ 399 ch: nt = 78, np =  4, E* = 11.301 MeV
+ 400 ch: nt = 79, np =  4, E* = 11.306 MeV

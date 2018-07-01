@@ -1,6 +1,6 @@
-      module Eigen
+      module eigen
       public :: tred2, eigval_u, eigval_d, triql, houshld_ql, jacobi
-      private :: Set_Limit, Num_Ch_Sign, Bisec, pythag
+      private :: set_limit, num_ch_sign, bisec, pythag
 !----------------------------------------------------------------------!
 !     This program is a module subroutine which seeks eigenvalues      !
 !     (and eigenvectors if you want) by Householder-QL method.         !
@@ -14,7 +14,7 @@
 !----------------------------------------------------------------------!
       contains
 !**********************************************************************!
-      subroutine Houshld_QL(a, d, c)
+      subroutine houshld_ql(a, d, c)
       implicit none
       integer :: N
       real(8), intent(inout) :: a(:,:)
@@ -103,7 +103,7 @@
 
       end subroutine
 !**********************************************************************!
-      pure subroutine Eigval_d(N, Nreq, epsr, Diag, Sub_Diag, Eig)
+      pure subroutine eigval_d(N, Nreq, epsr, Diag, Sub_Diag, Eig)
       implicit none
       integer, intent(in) :: N, Nreq
       integer :: Nsl, Nsr, Nl, Nr, Nm, m
@@ -160,7 +160,7 @@
       return
       end subroutine
 !**********************************************************************!
-      pure subroutine  Eigval_u(N, Nreq, epsr, Diag, Sub_Diag, Eig)
+      pure subroutine eigval_u(N, Nreq, epsr, Diag, Sub_Diag, Eig)
       implicit none
       integer, intent(in) :: N, Nreq
       integer :: Nsl, Nsr, Nl, Nr, Nm, m
@@ -215,7 +215,7 @@
       return
       end subroutine
 !**********************************************************************!
-      pure subroutine Bisec(N, Diag, Sub_Diag2, Xl, Xr, Nl, Nr, x, epsr)
+      pure subroutine bisec(N, Diag, Sub_Diag2, Xl, Xr, Nl, Nr, x, epsr)
       implicit none
       integer, intent(in) :: N, Nl, Nr
       integer :: Nm
@@ -239,7 +239,7 @@
       return
       end subroutine
 !**********************************************************************!
-      pure subroutine Set_Limit(N, Diag, Sub_Diag, Sub_Diag2, a, b)
+      pure subroutine set_limit(N, Diag, Sub_Diag, Sub_Diag2, a, b)
       implicit none
       integer, intent(in) :: N
       integer :: i
@@ -262,7 +262,7 @@
       return
       end subroutine
 !**********************************************************************!
-      pure subroutine Num_Ch_Sign(N, Diag, Sub_Diag2, x, NCS, G)
+      pure subroutine num_ch_sign(N, Diag, Sub_Diag2, x, NCS, G)
       implicit none
       integer, intent(in) :: N
       integer, intent(inout) :: NCS
@@ -368,7 +368,7 @@
       return
       end function
 !**********************************************************************!
-      subroutine  Jacobi(N, a, epsr, x)
+      subroutine jacobi(N, a, epsr, x)
       implicit none
       integer :: i, j, p, q
       integer, intent(in)  :: N

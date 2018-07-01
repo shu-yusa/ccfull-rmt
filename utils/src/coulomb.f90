@@ -1,5 +1,5 @@
 !======================================================================!
-      module Coulomb
+      module coulomb
       public :: dfcoul
       private :: jflgam, yfclen, yfasym, yfireg, yfrica, dfcz0, jfdelg
 !======================================================================!
