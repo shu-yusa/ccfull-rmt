@@ -1,4 +1,4 @@
-FC=`which mpif90`
+FC=mpif90
 SUBDIR=./utils
 OBJDIR=./obj
 MODDIR=./modules

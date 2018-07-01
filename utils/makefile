@@ -5,7 +5,7 @@ LIBDIR=./lib
 MODDIR=./modules
 OBJDIR=./obj
 
-GFCMPL=`which gfortran`
+GFCMPL=gfortran
 # LAP=-I/opt/intel/composer_xe_2011_sp1.7.256/mkl/include/intel64/ilp64 -lmkl_lapack95_ilp64 -lmkl_blas95_ilp64 -lmkl_intel_ilp64 -lmkl_intel_thread -lmkl_core -liomp5
 GFFLAG=-O2 -J $(MODDIR) 
 
